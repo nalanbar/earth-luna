@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+
 /* ── Reset & Base ─────────────────────────────────────── */
 *,
 *::before,
@@ -19,6 +21,7 @@
   --accent-warm: #ff6b4a;
   --border: #1a1c26;
   --font: "Helvetica Neue", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-title: "Orbitron", var(--font);
   --font-mono: "SF Mono", "Fira Code", "Consolas", monospace;
 }
 
@@ -72,6 +75,7 @@ img {
 }
 
 .nav-brand {
+  font-family: var(--font-title);
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-bright);
@@ -137,6 +141,7 @@ img {
 }
 
 .hero h1 {
+  font-family: var(--font-title);
   font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 800;
   color: var(--text-bright);
@@ -242,6 +247,7 @@ img {
 }
 
 .features h2 {
+  font-family: var(--font-title);
   text-align: center;
   font-size: 1.75rem;
   font-weight: 700;
@@ -273,6 +279,7 @@ img {
 }
 
 .feature-card h3 {
+  font-family: var(--font-title);
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--text-bright);
@@ -294,6 +301,7 @@ img {
 }
 
 .about h2 {
+  font-family: var(--font-title);
   font-size: 1.75rem;
   font-weight: 700;
   color: var(--text-bright);
@@ -366,6 +374,7 @@ img {
 }
 
 .legal h1 {
+  font-family: var(--font-title);
   font-size: 2rem;
   font-weight: 800;
   color: var(--text-bright);
@@ -380,6 +389,7 @@ img {
 }
 
 .legal h2 {
+  font-family: var(--font-title);
   font-size: 1.2rem;
   font-weight: 700;
   color: var(--text-bright);
