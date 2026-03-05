@@ -1,12 +1,142 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Earth–Luna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Superconducting Hub &mdash; Earth&ndash;Luna</title>
+    <meta
+      name="description"
+      content="Superconducting Hub &mdash; a companion app for Netrunner players."
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Earth–Luna</h1>
-    <p>App Clip testing domain.</p>
+    <div class="splash-bg" id="splash-bg" aria-hidden="true"></div>
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <!-- ── Nav ──────────────────────────────────────── -->
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand"><span>//</span> Superconducting Hub</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ── Hero ─────────────────────────────────────── -->
+    <section class="hero" id="hero">
+      <img
+        class="hero-icon"
+        src="Assets.xcassets/AppIcon.appiconset/Icon-60@3x.png"
+        alt="Superconducting Hub icon"
+      />
+      <h1>
+        <span class="accent">Superconducting</span> Hub
+      </h1>
+      <p class="tagline">
+        <!-- TODO: Your tagline here. Example: -->
+        A companion app for Netrunner players.
+      </p>
+      <div class="cta-row">
+        <!--
+          TODO: Replace # with your App Store link.
+        -->
+        <a href="#" class="btn btn-primary">Download on the App Store</a>
+      </div>
+    </section>
+
+    <div class="content-body">
+    <!-- ── Screenshot ───────────────────────────────── -->
+    <section class="screenshot-section">
+      <div class="screenshot-frame">
+        <!--
+          TODO: Replace with an actual screenshot:
+          <img src="screenshot.png" alt="Superconducting Hub screenshot" />
+        -->
+        <div class="screenshot-placeholder">[ app screenshot ]</div>
+      </div>
+    </section>
+
+    <!-- ── Features ─────────────────────────────────── -->
+    <section class="features" id="features">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">&gt;_</div>
+          <h3>Feature One</h3>
+          <p>
+            <!-- TODO: Your copy here. -->
+            Description of your first feature.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">&lt;/&gt;</div>
+          <h3>Feature Two</h3>
+          <p>
+            <!-- TODO: Your copy here. -->
+            Description of your second feature.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">&#9881;</div>
+          <h3>Feature Three</h3>
+          <p>
+            <!-- TODO: Your copy here. -->
+            Description of your third feature.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── About ────────────────────────────────────── -->
+    <section class="about">
+      <h2>Built for the Community</h2>
+      <p>
+        <!-- TODO: Your copy here. -->
+        Superconducting Hub is built around the Null Signal Games version of
+        Netrunner. Community art assets are used under the Null Signal Games
+        community use guidelines.
+      </p>
+      <p>
+        <!-- TODO: Your copy here. -->
+        This app is not affiliated with or endorsed by Null Signal Games.
+      </p>
+    </section>
+
+    <!-- ── Footer ───────────────────────────────────── -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <!--
+            TODO: Add any other links (support email, GitHub, etc.)
+          -->
+        </ul>
+        <p class="footer-credit">
+          &copy; 2025 Earth&ndash;Luna. Not affiliated with Null Signal Games.
+        </p>
+      </div>
+    </footer>
+    </div><!-- .content-body -->
+    <script>
+      (function () {
+        var splashes = [
+          "Splash_Anarch.png",
+          "Splash_Criminal.png",
+          "Splash_HB.png",
+          "Splash_Jinteki.png",
+          "Splash_NBN.png",
+          "Splash_Shaper.png",
+          "Splash_Weyland.png",
+        ];
+        var pick = splashes[Math.floor(Math.random() * splashes.length)];
+        document.getElementById("splash-bg").style.backgroundImage =
+          'url("' + pick + '")';
+      })();
+    </script>
   </body>
 </html>
