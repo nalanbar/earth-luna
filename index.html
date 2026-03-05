@@ -52,7 +52,7 @@
     <section class="screenshot-section">
       <div class="screenshot-frame">
         <div class="screenshot-carousel" id="screenshot-carousel">
-          <img src="screenshot-04.webp" alt="Superconducting Hub screenshot" class="carousel-img active" />
+          <img src="screenshot-04.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
           <img src="screenshot-05.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
           <img src="screenshot-06.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
           <img src="screenshot-07.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
@@ -147,9 +147,17 @@
           'url("' + pick + '")';
       })();
 
-      // Screenshot carousel – crossfade every 4s
+      // Screenshot carousel – shuffle on load, crossfade every 4s
       (function () {
-        var imgs = document.querySelectorAll(".carousel-img");
+        var carousel = document.getElementById("screenshot-carousel");
+        var imgs = Array.from(carousel.children);
+        for (var i = imgs.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          carousel.appendChild(imgs[j]);
+          var tmp = imgs[i]; imgs[i] = imgs[j]; imgs[j] = tmp;
+        }
+        imgs = carousel.querySelectorAll(".carousel-img");
+        imgs[0].classList.add("active");
         var current = 0;
         setInterval(function () {
           imgs[current].classList.remove("active");
