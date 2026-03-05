@@ -223,20 +223,24 @@ img {
   border: 1px solid var(--border);
 }
 
-.screenshot-frame img {
-  width: 100%;
+.screenshot-carousel {
+  position: relative;
+  aspect-ratio: 9 / 19.5;
+  background: var(--bg-card);
 }
 
-.screenshot-placeholder {
+.carousel-img {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 9 / 19.5;
-  background: linear-gradient(135deg, var(--bg-card) 0%, #161825 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent-dim);
-  font-size: 0.875rem;
-  font-family: var(--font-mono);
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.carousel-img.active {
+  opacity: 1;
 }
 
 /* ── Features ─────────────────────────────────────────── */

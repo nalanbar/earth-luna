@@ -48,14 +48,23 @@
     </section>
 
     <div class="content-body">
-    <!-- ── Screenshot ───────────────────────────────── -->
+    <!-- ── Screenshot Carousel ─────────────────────── -->
     <section class="screenshot-section">
       <div class="screenshot-frame">
-        <!--
-          TODO: Replace with an actual screenshot:
-          <img src="screenshot.png" alt="Superconducting Hub screenshot" />
-        -->
-        <div class="screenshot-placeholder">[ app screenshot ]</div>
+        <div class="screenshot-carousel" id="screenshot-carousel">
+          <img src="screenshot-04.webp" alt="Superconducting Hub screenshot" class="carousel-img active" />
+          <img src="screenshot-05.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-06.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-07.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-08.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-09.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-10.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-11.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-12.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-15.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-16.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+          <img src="screenshot-17.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+        </div>
       </div>
     </section>
 
@@ -136,6 +145,17 @@
         var pick = splashes[Math.floor(Math.random() * splashes.length)];
         document.getElementById("splash-bg").style.backgroundImage =
           'url("' + pick + '")';
+      })();
+
+      // Screenshot carousel – crossfade every 4s
+      (function () {
+        var imgs = document.querySelectorAll(".carousel-img");
+        var current = 0;
+        setInterval(function () {
+          imgs[current].classList.remove("active");
+          current = (current + 1) % imgs.length;
+          imgs[current].classList.add("active");
+        }, 4000);
       })();
     </script>
   </body>
