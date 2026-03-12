@@ -390,6 +390,15 @@ img {
   margin-bottom: 0.75rem;
 }
 
+.legal h3 {
+  font-family: var(--font-title);
+  font-size: 1.0rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
 .legal p,
 .legal ul {
   font-size: 0.95rem;
