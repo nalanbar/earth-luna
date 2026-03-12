@@ -428,7 +428,7 @@ img {
   }
 
   .feature-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
   }
 
   .legal {
