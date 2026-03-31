@@ -1,0 +1,58 @@
+<!doctype html>
+<html
+  lang="en"
+  data-app-name="Superconducting Hub"
+  data-app-scheme="superconductinghub"
+  data-callback-path="oauth/callback"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OAuth Redirect | Superconducting Hub</title>
+    <meta
+      name="description"
+      content="OAuth redirect page for Superconducting Hub."
+    />
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand"><span>//</span> Earth-Luna</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="oauth-redirect">
+      <section class="oauth-card">
+        <span class="oauth-eyebrow">OAuth Redirect</span>
+        <h1>Superconducting Hub</h1>
+        <p class="oauth-status" id="oauth-status">
+          Preparing your sign-in redirect.
+        </p>
+        <p>
+          If the app does not reopen, use the button below to continue the OAuth
+          flow manually.
+        </p>
+        <div class="oauth-uri" id="oauth-uri" aria-live="polite"></div>
+        <div class="oauth-actions">
+          <a class="btn btn-primary" id="oauth-open-link" href="#">Open the App</a>
+          <a class="btn btn-secondary" href="/">Return Home</a>
+        </div>
+        <p class="oauth-note">
+          Register this page as the HTTPS redirect URI:
+          <br />
+          <code>https://earth-luna.com/oauth/superconducting-hub.html</code>
+        </p>
+      </section>
+    </main>
+
+    <script src="./redirect.js"></script>
+  </body>
+</html>

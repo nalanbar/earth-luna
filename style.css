@@ -120,6 +120,30 @@ img {
   background: rgba(7, 8, 13, 0.5);
 }
 
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(rgba(0, 212, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at top, rgba(0, 212, 255, 0.12), transparent 45%),
+    var(--bg);
+  background-size: 28px 28px, 28px 28px, auto, auto;
+  background-position: center;
+}
+
+.grid-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 8, 13, 0.25),
+    rgba(7, 8, 13, 0.82)
+  );
+}
+
 /* ── Hero ─────────────────────────────────────────────── */
 .hero {
   min-height: 100vh;
@@ -413,6 +437,76 @@ img {
   margin-bottom: 0.4rem;
 }
 
+/* ── OAuth Redirect Pages ────────────────────────────── */
+.oauth-redirect {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 1.5rem 3rem;
+}
+
+.oauth-card {
+  width: min(100%, 40rem);
+  background: rgba(14, 16, 24, 0.92);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+
+.oauth-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.oauth-card h1 {
+  font-family: var(--font-title);
+  font-size: clamp(1.6rem, 4vw, 2.3rem);
+  line-height: 1.15;
+  color: var(--text-bright);
+  margin-bottom: 0.85rem;
+}
+
+.oauth-card p {
+  margin-bottom: 1rem;
+}
+
+.oauth-status {
+  color: var(--text-bright);
+}
+
+.oauth-uri {
+  margin: 1.5rem 0;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(7, 8, 13, 0.85);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-bright);
+  word-break: break-all;
+}
+
+.oauth-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.oauth-note {
+  margin-top: 1.25rem;
+  color: #9aa0ad;
+  font-size: 0.88rem;
+}
+
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 600px) {
   .nav-inner {
@@ -433,5 +527,9 @@ img {
 
   .legal {
     padding: 5.5rem 1rem 3rem;
+  }
+
+  .oauth-card {
+    padding: 1.4rem;
   }
 }
