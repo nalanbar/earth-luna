@@ -3,187 +3,183 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Superconducting Hub | Earth-Luna</title>
+    <title>Earth-Luna | Apps for Play and Presence</title>
     <meta
       name="description"
-      content="Superconducting Hub | a companion app for Netrunner players."
+      content="Explore Earth-Luna apps including Superconducting Hub, Brilliant Display, and An App of Ice and Fire."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="splash-bg" id="splash-bg" aria-hidden="true"></div>
+    <div class="aurora-bg" aria-hidden="true">
+      <div class="aurora-orb aurora-orb-one"></div>
+      <div class="aurora-orb aurora-orb-two"></div>
+      <div class="aurora-orb aurora-orb-three"></div>
+      <div class="aurora-orb aurora-orb-four"></div>
+      <div class="aurora-orb aurora-orb-five"></div>
+      <div class="aurora-orb aurora-orb-six"></div>
+      <div class="noise-overlay"></div>
+    </div>
 
-
-    <!-- ── Nav ──────────────────────────────────────── -->
     <nav class="site-nav">
       <div class="nav-inner">
-        <a href="/" class="nav-brand"><span>//</span> Superconducting Hub</a>
+        <a href="/" class="nav-brand"><span>//</span> Earth-Luna</a>
         <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#approach">Approach</a></li>
           <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="howto.html">How To</a></li>
         </ul>
       </div>
     </nav>
 
-    <!-- ── Hero ─────────────────────────────────────── -->
-    <section class="hero" id="hero">
-      <img
-        class="hero-icon"
-        src="Assets.xcassets/AppIcon.appiconset/Icon-60@3x.png"
-        alt="Superconducting Hub icon"
-      />
-
-      <h1>
-        <span class="accent">Superconducting</span> Hub
-      </h1>
-      <p class="tagline">
-         A companion app for in-person Netrunner play.
-      </p>
-      <div class="cta-row">
-
-        <a href="https://apps.apple.com/us/app/superconducting-hub/id6759867609" class="btn btn-primary">Download on the App Store</a>
-      </div>
-      <br>
-            <p>Try the lite version without downloading! Scan the code below with your iPhone camera.</p>
-      <br>
-      <img 
-        class="appclip"
-        src="./superconductinghub.png"
-        alt="Superconducting Hub App Clip code"
-        height="250"
-      />
-    </div>
-
-      <p class="kofi-prompt">Like the app? Consider a donation.</p>
-      <div class="cta-row">
-        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-        <script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#9D2235', 'D1D7I3PBH');kofiwidget2.draw();</script>
-      </div>
-    </section>
-
-    <div class="content-body">
-    <!-- ── Screenshot Carousel ─────────────────────── -->
-    <section class="screenshot-section">
-      <div class="screenshot-frame">
-        <div class="screenshot-carousel" id="screenshot-carousel">
-          <img src="screenshot-04.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-05.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-06.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-07.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-08.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-09.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-10.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-11.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-12.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-15.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-16.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
-          <img src="screenshot-17.webp" alt="Superconducting Hub screenshot" class="carousel-img" />
+    <main>
+      <section class="hero hero-home">
+        <div class="glass-shell hero-shell">
+          <p class="eyebrow">Earth-Luna Apps</p>
+          <h1>Purpose-built apps with an eye towards accessibility.</h1>
+          <p class="hero-copy">
+            Earth-Luna Communications is the trade name of a small family of iOS and Mac apps focused on making the card games we love accessible from anywhere. Read cards, view decks, build decks, and track your games, all from our easy to use family of apps. 
+          </p>
+          <p class="hero-copy">
+            We are dedicated to making apps that are not only beautiful, but also fully compliant with Apple's accessibility guidelines. 
+          </p>
+          <div class="cta-row">
+            <a href="#apps" class="btn btn-primary">Browse the Apps</a>
+            <a href="apps/superconducting-hub.html" class="btn btn-secondary">
+              Open Superconducting Hub
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ── Features ─────────────────────────────────── -->
-    <section class="features" id="features">
-      <h2>Features</h2>
-      <div class="feature-grid">
-        <div class="feature-card">
-          <div class="feature-icon" aria-hidden="true">&gt;_</div>
-          <h3>Conduct your game</h3>
+      <section class="app-directory page-section" id="apps">
+        <div class="section-heading">
+          <p class="eyebrow">App Directory</p>
+          <h2>Choose the game you want to track and explore.</h2>
           <p>
-            Superconducting Hub allows you to play an in-person game of Netrunner with minimal setup or materials. Simply some dice or counters for card effects, and away you go!
+            Just like the old BASF commercial, we don't make the games you play, we just make playing them better. 
           </p>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon" aria-hidden="true">&lt;/&gt;</div>
-          <h3>Decide what you need</h3>
-          <p>
-            Do you want a simple click tracker? That's an option! Does your Corp deck use a lot of tags? Turn on tracking for the Runner! Are you a Shaper <i>par excellence</i>? Track your MU limit in the Superconducting Hub!
-          </p>
+        <div class="app-grid">
+          <article class="glass-card app-card app-card-live">
+            <div class="app-card-top">
+              <div class="app-badge">Live Now</div>
+              <div class="app-mark">SH</div>
+            </div>
+            <h3>Superconducting Hub</h3>
+            <p class="app-subtitle">A companion app for in-person Netrunner play.</p>
+            <p>
+              Track clicks, credits, MU, tags, and other game-state details with
+              an interface designed for play across the table.
+            </p>
+            <p>Upcoming version (1.3) will include a deck builder, and full accessibility features.</p>
+            <div class="app-meta">
+              <span>iPhone</span>
+              <span>App Clip</span>
+              <span>Available</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="apps/superconducting-hub.html">
+                View App Page
+              </a>
+              <a
+                class="btn btn-secondary"
+                href="https://apps.apple.com/us/app/superconducting-hub/id6759867609"
+              >
+                App Store
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card app-card">
+            <div class="app-card-top">
+              <div class="app-badge">Coming Soon</div>
+              <div class="app-mark">BD</div>
+            </div>
+            <h3>Brilliant Display</h3>
+            <p class="app-subtitle">A forthcoming Earth-Luna app.</p>
+            <p>
+              Dedicated to possibly the best looking card game of all time, Brilliant Display will be a companion app for collection tracking, deck building, and card reading for Ashes Reborn/Ashes Ascendancy. This app uses Ashes.live for data and deck sharing. 
+            </p>
+            <div class="app-meta">
+              <span>Launching Soon</span>
+              <span>Detail Page Ready</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="apps/brilliant-display.html">
+                Preview the Page
+              </a>
+            </div>
+          </article>
+
+          <article class="glass-card app-card">
+            <div class="app-card-top">
+              <div class="app-badge">Working Title</div>
+              <div class="app-mark">AF</div>
+            </div>
+            <h3>An App of Ice and Fire</h3>
+            <p class="app-subtitle">Working title for an upcoming release.</p>
+            <p>
+              Like the late King Robert Baratheon, A Game of Thrones: Second Edition is no longer a living game. Still, it's legacy lives on, and people still actively play and collect the game. <i>An App of Ice and Fire</i> will be a companion app for collection tracking, deck building, and card reading. This app uses thronesdb.com for data and deck sharing.
+            </p>
+            <div class="app-meta">
+              <span>Upcoming</span>
+              <span>Rename-Friendly</span>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-primary" href="apps/an-app-of-ice-and-fire.html">
+                Open the App Page
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section" id="approach">
+        <div class="section-heading">
+          <p class="eyebrow">Structure</p>
+          <h2>A hub-and-detail layout is the right default here.</h2>
         </div>
 
-        <div class="feature-card">
-          <div class="feature-icon" aria-hidden="true">&#9881;</div>
-          <h3>It's a little bit pretty!</h3>
-          <p>
-            We have fun parallax effects, and faction colors and icons in all of the places! Coming soon: community artwork!
-          </p>
+        <div class="glass-grid">
+          <article class="glass-card info-card">
+            <h3>Why separate pages</h3>
+            <p>
+              Product pages let each app hold its own screenshots, support
+              links, App Store copy, and changelog surface without overloading
+              the front page.
+            </p>
+          </article>
+          <article class="glass-card info-card">
+            <h3>Why this homepage</h3>
+            <p>
+              The landing page stays fast and scannable. It works as a selector,
+              a brand overview, and a launchpad for whichever app a visitor came
+              to see.
+            </p>
+          </article>
+          <article class="glass-card info-card">
+            <h3>Liquid-glass direction</h3>
+            <p>
+              The site now uses translucent layers, blur, highlights, and soft
+              gradients to suggest a glass material system without sacrificing
+              legibility.
+            </p>
+          </article>
         </div>
-        <div class="feature-card">
-          <div class="feature-icon" aria-hidden="true">&#9881;</div>
-          <h3>There is a card viewer!</h3>
-          <p>
-            Browse the card pool in stunning high definition! Read the card, get the pronounciation, read the flavor text and narratives! Flip the FFG switch and see the full history of Netrunner!
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ── About ────────────────────────────────────── -->
-    <section class="about">
-      <h2>Built for the Community</h2>
-      <p>
-        Superconducting Hub is built around the Null Signal Games releases of
-        Netrunner. Community art assets are used under the Null Signal Games
-        community use guidelines. Any background art used is used with permission
-        of the artist or owner, and is credited in the help section of the app. 
-      </p>
-      <p>
-
-        This app is not affiliated with or endorsed by Null Signal Games.
-      </p>
-    </section>
-
-    <!-- ── Footer ───────────────────────────────────── -->
     <footer class="site-footer">
       <div class="footer-inner">
         <ul class="footer-links">
+          <li><a href="/">Home</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
-          <!--
-            TODO: Add any other links (support email, GitHub, etc.)
-          -->
+          <li><a href="mailto:hello@earth-luna.com">Contact</a></li>
         </ul>
-        <p class="footer-credit">
-          &copy; 2026 Earth&ndash;Luna. Not affiliated with Null Signal Games.
-        </p>
+        <p class="footer-credit">&copy; 2026 Earth-Luna.</p>
       </div>
     </footer>
-    </div><!-- .content-body -->
-    <script>
-      (function () {
-        var splashes = [
-          "Splash_Anarch.webp",
-          "Splash_Criminal.webp",
-          "Splash_HB.webp",
-          "Splash_Jinteki.webp",
-          "Splash_NBN.webp",
-          "Splash_Shaper.webp",
-          "Splash_Weyland.webp",
-        ];
-        var pick = splashes[Math.floor(Math.random() * splashes.length)];
-        document.getElementById("splash-bg").style.backgroundImage =
-          'url("' + pick + '")';
-      })();
-
-      // Screenshot carousel – shuffle on load, crossfade every 4s
-      (function () {
-        var carousel = document.getElementById("screenshot-carousel");
-        var imgs = Array.from(carousel.children);
-        for (var i = imgs.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          carousel.appendChild(imgs[j]);
-          var tmp = imgs[i]; imgs[i] = imgs[j]; imgs[j] = tmp;
-        }
-        imgs = carousel.querySelectorAll(".carousel-img");
-        imgs[0].classList.add("active");
-        var current = 0;
-        setInterval(function () {
-          imgs[current].classList.remove("active");
-          current = (current + 1) % imgs.length;
-          imgs[current].classList.add("active");
-        }, 2000);
-      })();
-    </script>
   </body>
 </html>

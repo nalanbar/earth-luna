@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>An App of Ice and Fire | Earth-Luna</title>
+    <meta
+      name="description"
+      content="Preview the upcoming An App of Ice and Fire page from Earth-Luna."
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="app-page app-page-icefire">
+    <div class="aurora-bg" aria-hidden="true">
+      <div class="aurora-orb aurora-orb-one"></div>
+      <div class="aurora-orb aurora-orb-two"></div>
+      <div class="aurora-orb aurora-orb-three"></div>
+      <div class="aurora-orb aurora-orb-four"></div>
+      <div class="aurora-orb aurora-orb-five"></div>
+      <div class="aurora-orb aurora-orb-six"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand"><span>//</span> Earth-Luna</a>
+        <ul class="nav-links">
+          <li><a href="/">All Apps</a></li>
+          <li><a href="../privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero hero-app">
+        <div class="glass-shell hero-shell">
+          <p class="eyebrow">Working Title</p>
+          <h1>An App of Ice and Fire</h1>
+          <p class="hero-copy">
+            <b>Night gathers, and now your watch begins.</b>
+          </p>
+          <p class="hero-copy">
+            An App of Ice and Fire is a companion app for collection tracking, deck building, and card reading for A Game of Thrones: Second Edition. It is built for players and collectors who still care deeply about the game and want a modern tool for keeping that community knowledge close at hand.
+          </p>
+          
+          <div class="hero-pills">
+            <span>Collection tracking</span>
+            <span>Deck building</span>
+            <span>Card browser</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="glass-grid">
+          <article class="glass-card info-card">
+            <h3>Track the collection you actually have</h3>
+            <p>
+              Keep up with cycles and packs, deluxe expansions, and community releases in one place. The app is designed to make it easy to see what is already on your shelf and what you still want to hunt down. <br><br>There is even a shopping list tool that exports a list of pieces missing from your collection that you can easily share with your loved ones. 
+            </p>
+          </article>
+          <article class="glass-card info-card">
+            <h3>Read cards and browse decks with context</h3>
+            <p>
+              Search the card pool, browse decks, and move from collection tracking into deck building without losing your place. ThronesDB data helps keep the app useful whether you are studying the card pool or putting together your next list.
+            </p>
+          </article>
+          <article class="glass-card info-card">
+            <h3>An app for this night, and all the nights to come</h3>
+            <p>
+              A Game of Thrones: Second Edition may no longer be supported by its original publisher, but its community is still active, knowledgeable, and worth building for. This app is meant to support that living legacy with a tool that feels current and easy to use.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <ul class="footer-links">
+          <li><a href="/">All Apps</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+        </ul>
+        <p class="footer-credit">&copy; 2026 Earth-Luna.</p>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var palettes = [
+          ["#4A4C54", "#6B6D78", "#585A64", "#3A3C44", "#7E8090", "#5C5E68", "#2E3038", "#50525C", "#44464E"],
+          ["#8B7A1E", "#A69428", "#7A6B16", "#5C4E10", "#C4B030", "#6E6012", "#3E340C", "#504408", "#8C7C1A"],
+          ["#0E3E4E", "#165A6E", "#124A5C", "#0A3040", "#1E7A99", "#0E4454", "#082430", "#103848", "#0C3444"],
+          ["#6E0004", "#920006", "#800005", "#500003", "#C00007", "#700004", "#380002", "#5A0003", "#8A0005"],
+          ["#8C5A10", "#B07018", "#9A6214", "#6E480C", "#E89521", "#7C5010", "#523808", "#64420A", "#A46816"],
+          ["#1A1A1A", "#2C2C2C", "#222222", "#141414", "#383838", "#1E1E1E", "#0E0E0E", "#262626", "#303030"],
+          ["#2E5A0E", "#3E7A14", "#346A10", "#244A0A", "#509F17", "#2A5C0C", "#1C3A08", "#284E0A", "#3A7012"],
+          ["#3A3A3A", "#505050", "#444444", "#2E2E2E", "#626262", "#3C3C3C", "#222222", "#484848", "#565656"],
+          ["#5A3E16", "#7A5620", "#6A4A1A", "#4A3412", "#966628", "#604214", "#382A0E", "#503810", "#846020"]
+        ];
+
+        function hexToRgba(hex, alpha) {
+          var clean = hex.replace("#", "");
+          var value = parseInt(clean, 16);
+          var r = (value >> 16) & 255;
+          var g = (value >> 8) & 255;
+          var b = value & 255;
+          return "rgba(" + r + ", " + g + ", " + b + ", " + alpha + ")";
+        }
+
+        var root = document.documentElement;
+        var palette = palettes[Math.floor(Math.random() * palettes.length)];
+
+        root.style.setProperty("--page-bg-1", hexToRgba(palette[1], 0.3));
+        root.style.setProperty("--page-bg-2", hexToRgba(palette[4], 0.25));
+        root.style.setProperty("--page-bg-3", hexToRgba(palette[8], 0.2));
+        root.style.setProperty("--field-1", hexToRgba(palette[0], 0.24));
+        root.style.setProperty("--field-2", hexToRgba(palette[4], 0.24));
+        root.style.setProperty("--field-3", hexToRgba(palette[8], 0.22));
+
+        for (var i = 0; i < 9; i++) {
+          root.style.setProperty("--mesh-" + (i + 1), hexToRgba(palette[i], i === 4 ? 0.58 : 0.48));
+        }
+
+        root.style.setProperty("--orb-1", hexToRgba(palette[1], 0.92));
+        root.style.setProperty("--orb-2", hexToRgba(palette[4], 0.88));
+        root.style.setProperty("--orb-3", hexToRgba(palette[6], 0.72));
+        root.style.setProperty("--orb-4", hexToRgba(palette[2], 0.68));
+        root.style.setProperty("--orb-5", hexToRgba(palette[8], 0.8));
+        root.style.setProperty("--orb-6", hexToRgba(palette[3], 0.72));
+      })();
+    </script>
+  </body>
+</html>

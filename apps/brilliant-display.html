@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brilliant Display | Earth-Luna</title>
+    <meta
+      name="description"
+      content="Preview the upcoming Brilliant Display app from Earth-Luna."
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="app-page app-page-brilliant">
+    <div class="aurora-bg" aria-hidden="true">
+      <div class="aurora-orb aurora-orb-one"></div>
+      <div class="aurora-orb aurora-orb-two"></div>
+      <div class="aurora-orb aurora-orb-three"></div>
+      <div class="aurora-orb aurora-orb-four"></div>
+      <div class="aurora-orb aurora-orb-five"></div>
+      <div class="aurora-orb aurora-orb-six"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-brand"><span>//</span> Earth-Luna</a>
+        <ul class="nav-links">
+          <li><a href="/">All Apps</a></li>
+          <li><a href="../privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero hero-app">
+        <div class="glass-shell hero-shell">
+          <p class="eyebrow">Coming Soon</p>
+          <h1>Brilliant Display</h1>
+          <p class="hero-copy">
+            Brilliant Display is a companion app for Ashes Reborn and Ashes Ascendancy. It brings collection tracking, deck building, and fast card browsing into one place, with a presentation that tries to honor just how beautiful this game already is.
+          </p>
+          <div class="hero-pills">
+            <span>Collection tracking</span>
+            <span>Deck building</span>
+            <span>Card browser</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="glass-grid">
+          <article class="glass-card info-card">
+            <h3>Know what you own</h3>
+            <p>
+              Keep track of the releases in your collection and build a shopping list for the ones you still need. Your favorite magic type also shapes the look of the app, so the interface can feel a little more personal.
+            </p>
+          </article>
+          <article class="glass-card info-card">
+            <h3>Build here, browse anywhere</h3>
+            <p>
+              Brilliant Display lets you browse public decks, keep local drafts on your device, and connect to Ashes.live when you want to move between private planning and community sharing.
+            </p>
+          </article>
+          <article class="glass-card info-card">
+            <h3>Made for reading cards well</h3>
+            <p>
+              Search the card pool, read the details quickly, and move from cards to decks without losing context. The goal is simple: less friction when you want to look something up, compare options, or start building.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <ul class="footer-links">
+          <li><a href="/">All Apps</a></li>
+          <li><a href="../privacy.html">Privacy Policy</a></li>
+        </ul>
+        <p class="footer-credit">&copy; 2026 Earth-Luna.</p>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var palettes = [
+          ["#2A3800", "#3A4E00", "#324400", "#002040", "#4C5C00", "#002A50", "#001838", "#1E2E00", "#003460"],
+          ["#5C1018", "#7A1820", "#6A141C", "#0C1018", "#901E28", "#14181E", "#080C12", "#4A0E14", "#1A1E24"],
+          ["#5A4E10", "#6E2040", "#645818", "#4A1834", "#786414", "#5C1E3A", "#3E1428", "#50420C", "#682644"],
+          ["#1E3848", "#2C0840", "#264050", "#200A48", "#345868", "#2A0C50", "#180838", "#1A2E40", "#320E58"],
+          ["#4A3810", "#5E4818", "#544014", "#3C3C3C", "#6E5420", "#484848", "#30300E", "#424218", "#545454"],
+          ["#483830", "#0A4038", "#503E34", "#08342E", "#5C4A3C", "#0C4C42", "#062A24", "#3C302A", "#105848"],
+          ["#404040", "#4E1820", "#4A4A4A", "#3C1418", "#565656", "#541C24", "#2E1014", "#383838", "#602228"],
+          ["#282C2E", "#1E4450", "#303436", "#1A3844", "#383E42", "#244C58", "#162E38", "#242828", "#2A5462"],
+          ["#4A4830", "#302A54", "#524E38", "#28244A", "#5C5840", "#342E5C", "#201E3E", "#3E3C28", "#3C3664"]
+        ];
+
+        function hexToRgba(hex, alpha) {
+          var clean = hex.replace("#", "");
+          var value = parseInt(clean, 16);
+          var r = (value >> 16) & 255;
+          var g = (value >> 8) & 255;
+          var b = value & 255;
+          return "rgba(" + r + ", " + g + ", " + b + ", " + alpha + ")";
+        }
+
+        var root = document.documentElement;
+        var palette = palettes[Math.floor(Math.random() * palettes.length)];
+
+        root.style.setProperty("--page-bg-1", hexToRgba(palette[1], 0.28));
+        root.style.setProperty("--page-bg-2", hexToRgba(palette[4], 0.24));
+        root.style.setProperty("--page-bg-3", hexToRgba(palette[8], 0.22));
+        root.style.setProperty("--field-1", hexToRgba(palette[0], 0.24));
+        root.style.setProperty("--field-2", hexToRgba(palette[4], 0.24));
+        root.style.setProperty("--field-3", hexToRgba(palette[8], 0.24));
+
+        for (var i = 0; i < 9; i++) {
+          root.style.setProperty("--mesh-" + (i + 1), hexToRgba(palette[i], i === 4 ? 0.56 : 0.48));
+        }
+
+        root.style.setProperty("--orb-1", hexToRgba(palette[1], 0.9));
+        root.style.setProperty("--orb-2", hexToRgba(palette[4], 0.88));
+        root.style.setProperty("--orb-3", hexToRgba(palette[6], 0.72));
+        root.style.setProperty("--orb-4", hexToRgba(palette[2], 0.66));
+        root.style.setProperty("--orb-5", hexToRgba(palette[8], 0.82));
+        root.style.setProperty("--orb-6", hexToRgba(palette[3], 0.72));
+      })();
+    </script>
+  </body>
+</html>
